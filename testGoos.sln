@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testGoos", "testGoos\testGoos.csproj", "{0212EC1E-DB0C-4DA8-8F5A-D5CEE5F9B188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testGoos.Tests", "testGoos.Tests\testGoos.Tests.csproj", "{37B66730-C616-4C57-8E66-133DE68D0CE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0212EC1E-DB0C-4DA8-8F5A-D5CEE5F9B188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0212EC1E-DB0C-4DA8-8F5A-D5CEE5F9B188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0212EC1E-DB0C-4DA8-8F5A-D5CEE5F9B188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0212EC1E-DB0C-4DA8-8F5A-D5CEE5F9B188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B66730-C616-4C57-8E66-133DE68D0CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B66730-C616-4C57-8E66-133DE68D0CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B66730-C616-4C57-8E66-133DE68D0CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B66730-C616-4C57-8E66-133DE68D0CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
