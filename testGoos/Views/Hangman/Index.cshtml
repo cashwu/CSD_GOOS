@@ -1,7 +1,9 @@
 ﻿
+@model testGoos.Models.HangmanViewModel
+
 <h1>Hangman</h1>
 
-<h2>Tries :12</h2>
-<h2>Length :4</h2>
-<h2>Used :AEIOU</h2>
-<h2>Discovered :_A__</h2>
+<h2>Tries :@Model.Tries</h2>
+<h2>Length :@Model.Length</h2>
+<h2>Used :@Model.Used</h2>
+<h2>Discovered :@Model.Discovered</h2>

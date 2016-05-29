@@ -9,10 +9,11 @@ namespace testGoos.Tests.Controller
     {
 		[Test]
         public void Hangman_GameStart()
-        {
+		{
+		    var word = "cash";
             var controller = new HangmanController();
-
-		    var result = controller.Index();
+			
+		    var result = controller.Index(word);
 
 		    var viewResul = result as ViewResult;
 		    var viewModel = viewResul.Model as HangmanViewModel;

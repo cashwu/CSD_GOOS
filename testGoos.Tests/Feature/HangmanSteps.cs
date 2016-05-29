@@ -8,6 +8,7 @@ namespace testGoos.Tests.Feature
     [Binding]
     public class HangmanSteps : FluentTest
     {
+        private string word;
         private ChromeDriver Driver
         {
             get
@@ -17,14 +18,15 @@ namespace testGoos.Tests.Feature
         }
 
         [Given(@"have a work ""(.*)""")]
-        public void GivenHaveAWork(string p0)
+        public void GivenHaveAWork(string word)
         {
+            this.word = word;
         }
         
         [When(@"game start")]
         public void WhenGameStart()
         {
-            Driver.Navigate().GoToUrl("http://localhost:2938/Hangman/Index");
+            Driver.Navigate().GoToUrl("http://localhost:2938/Hangman/Index?word=" + word);
         }
         
         [Then(@"tries have show (.*)")]
