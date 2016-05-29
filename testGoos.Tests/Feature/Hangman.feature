@@ -6,4 +6,4 @@ Scenario: Hangman Game
 	Then tries have show 12
 	And  length have show 4
 	And  used have show "AEIOU"
-	And  discovered have show "_a__"
+	And  discovered have show "_A__"
