@@ -124,6 +124,7 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\HangmanControllerTest.cs" />
     <None Include="Feature\Hangman.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Hangman.feature.cs</LastGenOutput>
