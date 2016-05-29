@@ -1,5 +1,5 @@
 ﻿using FluentAutomation;
-using FluentAutomation.Interfaces;
+using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
 
@@ -30,29 +30,26 @@ namespace testGoos.Tests.Feature
         [Then(@"tries have show (.*)")]
         public void ThenTriesHaveShow(int tries)
         {
-            var b = (IActionSyntaxProvider) ScenarioContext.Current["Browser"];
-            b.Assert.Text("Tries :" + tries);
+            
+            Assert.IsTrue(Driver.PageSource.Contains("Tries :" + tries));
         }
         
         [Then(@"length have show (.*)")]
         public void ThenLengthHaveShow(int length)
         {
-            var b = (IActionSyntaxProvider)ScenarioContext.Current["Browser"];
-            b.Assert.Text("Length :" + length);
+            Assert.IsTrue(Driver.PageSource.Contains("Length :" + length));
         }
         
         [Then(@"used have show ""(.*)""")]
         public void ThenUsedHaveShow(string used)
         {
-            var b = (IActionSyntaxProvider)ScenarioContext.Current["Browser"];
-            b.Assert.Text("Used :" + used);
+            Assert.IsTrue(Driver.PageSource.Contains("Used :" + used));
         }
         
         [Then(@"discovered have show ""(.*)""")]
         public void ThenDiscoveredHaveShow(string discovered)
         {
-            var b = (IActionSyntaxProvider)ScenarioContext.Current["Browser"];
-            b.Assert.Text("Discovered :" + discovered);
+            Assert.IsTrue(Driver.PageSource.Contains("Discovered :" + discovered));
         }
     }
 }
