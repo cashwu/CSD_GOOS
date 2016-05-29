@@ -7,13 +7,7 @@ namespace testGoos.Controllers
     {
         public ActionResult Index(string word)
         {
-            var model = new HangmanViewModel
-            {
-                Tries = 12,
-                Length = word.Length,
-                Used = "AEIOU",
-                Discovered = "_A__"
-            };
+            var model = new HangmanViewModel(word);
 
             return View(model);
         }

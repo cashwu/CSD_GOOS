@@ -20,8 +20,8 @@ namespace testGoos.Tests.Controller
 
 			Assert.AreEqual(12, viewModel.Tries);
 			Assert.AreEqual(4, viewModel.Length);
-			Assert.AreEqual("AEIOU", viewModel.Used);
-			Assert.AreEqual("_A__", viewModel.Discovered);
+			Assert.AreEqual("aeiou", viewModel.Used);
+			Assert.AreEqual("_a__", viewModel.Discovered);
         }
     }
 }

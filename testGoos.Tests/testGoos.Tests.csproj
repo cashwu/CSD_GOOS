@@ -114,6 +114,7 @@
     </Compile>
     <Compile Include="Feature\HangmanSteps.cs" />
     <Compile Include="Feature\Hooks.cs" />
+    <Compile Include="Models\HangmanViewModelTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
